@@ -6,6 +6,7 @@ Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	39f42e1294ec35fa581df56c1291621f
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
