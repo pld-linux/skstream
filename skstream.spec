@@ -1,13 +1,12 @@
 Summary:	Portable C++ classes for IP(sockets) applications
 Summary(pl):	Przeno¶ne klasy C++ implementuj±ce gniazda IP
 Name:		skstream
-Version:	0.2.4
+Version:	0.3.0
 Release:	1
 License:	LGPL
 Group:		Libraries
-# TODO: switch to .bz2 on upgrade
-Source0:	ftp://ftp.worldforge.org/pub/worldforge/libs/skstream/%{name}-%{version}.tar.gz
-# Source0-md5:	39f42e1294ec35fa581df56c1291621f
+Source0:	ftp://ftp.worldforge.org/pub/worldforge/libs/skstream/%{name}-%{version}.tar.bz2
+# Source0-md5:	52cd742a9432d9e106c530baa5bead21
 URL:		http://www.worldforge.org/dev/eng/libraries/skstream/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -52,13 +51,14 @@ Pakiet zawiera statyczne biblioteki skstream.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
+%{__autoconf}
 %{__autoheader}
 %{__automake}
-%{__autoconf}
-%configure
+%configure \
+	--enable-static
+
 %{__make}
 
 %install
@@ -75,16 +75,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS NEWS README
+%doc AUTHORS ChangeLog README TODO
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
 %files devel
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_bindir}/skstream-config
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib*.la
-%{_includedir}/skstream
-%{_aclocaldir}/*.m4
+%{_libdir}/skstream-*
+%{_includedir}/skstream-*
+%{_pkgconfigdir}/*.pc
 
 %files static
 %defattr(644,root,root,755)
