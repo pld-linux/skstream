@@ -1,16 +1,18 @@
 Summary:	Portable C++ classes for IP(sockets) applications
-Summary(pl):	Przeno¶ne klasy C++ implementuj±ce sokety IP
+Summary(pl):	Przeno¶ne klasy C++ implementuj±ce gniazda IP
 Name:		skstream
 Version:	0.2.4
 Release:	1
 License:	LGPL
 Group:		Libraries
-Source0:	%{name}-%{version}.tar.gz
+# TODO: switch to .bz2 on upgrade
+Source0:	ftp://ftp.worldforge.org/pub/worldforge/libs/skstream/%{name}-%{version}.tar.gz
 # Source0-md5:	39f42e1294ec35fa581df56c1291621f
+URL:		http://www.worldforge.org/dev/eng/libraries/skstream/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libstdc++-devel
-BuildREquires:	libtool
+BuildRequires:	libtool >= 2:1.4d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -62,7 +64,8 @@ rm -f missing
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -78,9 +81,9 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/skstream-config
-%{_includedir}/skstream
-%{_libdir}/lib*.la
 %attr(755,root,root) %{_libdir}/lib*.so
+%{_libdir}/lib*.la
+%{_includedir}/skstream
 %{_aclocaldir}/*.m4
 
 %files static
