@@ -16,7 +16,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 skstream library.
 
-%description
+%description -l pl
 Biblioteka skstream.
 
 %package devel
@@ -27,14 +27,10 @@ Requires:	%{name} = %{version}
 Requires:	libstdc++-devel
 
 %description devel
-skstream library.
-
 This package contains the header files needed to develop programs that
 use these skstream.
 
 %description devel -l pl
-Biblioteka skstream.
-
 Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
 u¿ywaj±cych bibliotek skstream.
 
@@ -45,13 +41,9 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
-skstream library.
-
 This package contains the static skstream libraries.
 
 %description static -l pl
-Biblioteka skstream.
-
 Pakiet zawiera statyczne biblioteki skstream.
 
 %prep
