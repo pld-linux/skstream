@@ -1,12 +1,13 @@
 Summary:	Portable C++ classes for IP(sockets) applications
 Summary(pl):	Przeno¶ne klasy C++ implementuj±ce gniazda IP
 Name:		skstream
-Version:	0.3.1
+Version:	0.3.2
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.worldforge.org/pub/worldforge/libs/skstream/%{name}-%{version}.tar.bz2
-# Source0-md5:	989778024bb7df6aa16d1733f93d1156
+# Source0-md5:	5364e1dc9b5016fd0d8a118be53ef2a5
+# Source0-size:	192780
 URL:		http://www.worldforge.org/dev/eng/libraries/skstream/
 BuildRequires:	autoconf
 BuildRequires:	automake
