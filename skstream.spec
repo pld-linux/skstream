@@ -13,7 +13,7 @@ BuildREquires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-skstream library
+skstream library.
 
 %description
 Biblioteka skstream.
@@ -26,7 +26,7 @@ Requires:	%{name} = %{version}
 Requires:	libstdc++-devel
 
 %description devel
-skstream library
+skstream library.
 
 This package contains the header files needed to develop programs that
 use these skstream.
@@ -44,14 +44,14 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
-skstream library
+skstream library.
 
-This package contains the static Atlas-C++ libraries.
+This package contains the static skstream libraries.
 
 %description static -l pl
 Biblioteka skstream.
 
-Pakiet zawiera statyczne biblioteki Atlas-C++.
+Pakiet zawiera statyczne biblioteki skstream.
 
 %prep
 %setup -q
