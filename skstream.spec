@@ -1,7 +1,3 @@
-# TODO
-# - no nsl libs patch?
-# checking for gethostbyname in -lnsl... no
-# configure: error: Unable to find gethostbyname() socket call.
 Summary:	Portable C++ classes for IP(sockets) applications
 Summary(pl):	Przeno¶ne klasy C++ implementuj±ce gniazda IP
 Name:		skstream
