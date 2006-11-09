@@ -24,7 +24,7 @@ Biblioteka skstream.
 Summary:	Header files for skstream development
 Summary(pl):	Pliki nag³ówkowe do biblioteki skstream
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
 
 %description devel
@@ -39,7 +39,7 @@ u¿ywaj±cych bibliotek skstream.
 Summary:	Static libraries for skstream development
 Summary(pl):	Statyczne biblioteki skstream
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains the static skstream libraries.
