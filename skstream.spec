@@ -1,5 +1,5 @@
 Summary:	Portable C++ classes for IP(sockets) applications
-Summary(pl):	Przeno¶ne klasy C++ implementuj±ce gniazda IP
+Summary(pl.UTF-8):   PrzenoÅ›ne klasy C++ implementujÄ…ce gniazda IP
 Name:		skstream
 Version:	0.3.5
 Release:	1
@@ -17,12 +17,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 skstream library.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka skstream.
 
 %package devel
 Summary:	Header files for skstream development
-Summary(pl):	Pliki nag³ówkowe do biblioteki skstream
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe do biblioteki skstream
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libstdc++-devel
@@ -31,20 +31,20 @@ Requires:	libstdc++-devel
 This package contains the header files needed to develop programs that
 use these skstream.
 
-%description devel -l pl
-Pakiet zawiera pliki nag³ówkowe niezbêdne do kompilowania programów
-u¿ywaj±cych bibliotek skstream.
+%description devel -l pl.UTF-8
+Pakiet zawiera pliki nagÅ‚Ã³wkowe niezbÄ™dne do kompilowania programÃ³w
+uÅ¼ywajÄ…cych bibliotek skstream.
 
 %package static
 Summary:	Static libraries for skstream development
-Summary(pl):	Statyczne biblioteki skstream
+Summary(pl.UTF-8):   Statyczne biblioteki skstream
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains the static skstream libraries.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Pakiet zawiera statyczne biblioteki skstream.
 
 %prep
